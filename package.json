@@ -4,7 +4,7 @@
   "description": "Router for Koa",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,10 @@
     "Koa",
     "router"
   ],
-  "author": "Irwin Lourtet <contact@lourtet.fr>",
-  "license": "MIT"
+  "author": "Irwin Lourtet <dev@lourtet.fr>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "3.1.2",
+    "unit.js": "2.0.0"
+  }
 }
