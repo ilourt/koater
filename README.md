@@ -60,7 +60,7 @@ app.listen('3000');
 ## Roadmap
 
 * [ ] Add possibility to add middleware
-* [ ] Unit tests
+* [x] Unit tests
 * [ ] Publish on npm
 
 ## Author
