@@ -39,7 +39,7 @@ let router = {
    */
   use: function ({method, path, fn, name}) {
     let _name = method + '_' + path;
-    this._routes[_name] = {fn, name: name || _name};
+    this._routes[_name] = {fn, name: name || _name, method, path};
   },
 
   /**
