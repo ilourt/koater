@@ -63,7 +63,7 @@ app.listen('3000');
 
 * [ ] Add possibility to add middleware
 * [x] Unit tests
-* [ ] Publish on npm
+* [x] Publish on npm
 
 ## Author
 
