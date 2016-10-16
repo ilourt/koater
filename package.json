@@ -4,16 +4,22 @@
   "description": "Router for Koa",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
-    "url": "github.com:ilourt/koater.git"
+    "url": "git://github.com/ilourt/koater.git"
   },
   "keywords": [
     "Koa",
     "router"
   ],
-  "author": "Irwin Lourtet <contact@lourtet.fr>",
-  "license": "MIT"
+  "author": "Irwin Lourtet <dev@lourtet.fr>",
+  "license": "MIT",
+  "devDependencies": {
+    "co": "4.6.0",
+    "mocha": "3.1.2",
+    "sinon": "1.17.6",
+    "unit.js": "2.0.0"
+  }
 }

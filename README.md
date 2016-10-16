@@ -62,3 +62,7 @@ app.listen('3000');
 * [ ] Add possibility to add middleware
 * [ ] Unit tests
 * [ ] Publish on npm
+
+## Author
+
+Irwin Lourtet <dev@lourtet.fr>

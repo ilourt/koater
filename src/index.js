@@ -1,3 +1,14 @@
+/**
+ * This file is part of the Koater lib.
+ *
+ * (c) Irwin Lourtet <dev@lourtet.fr>
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE file distributed with this source code.
+ *
+ * @author Irwin Lourtet <dev@lourtet.fr>
+ */
+
 let router = {
   /**
    * Store the routes added to the router.
@@ -28,7 +39,7 @@ let router = {
    */
   use: function ({method, path, fn, name}) {
     let _name = method + '_' + path;
-    this._routes[_name] = {fn, name: name || _name};
+    this._routes[_name] = {fn, name: name || _name, method, path};
   },
 
   /**
