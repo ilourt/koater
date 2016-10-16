@@ -1,0 +1,19 @@
+{
+  "name": "koater",
+  "version": "0.1.0",
+  "description": "Router for Koa",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:ilourt/koater.git"
+  },
+  "keywords": [
+    "Koa",
+    "router"
+  ],
+  "author": "Irwin Lourtet <contact@lourtet.fr>",
+  "license": "MIT"
+}
