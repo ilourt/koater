@@ -17,7 +17,9 @@
   "author": "Irwin Lourtet <dev@lourtet.fr>",
   "license": "MIT",
   "devDependencies": {
+    "co": "4.6.0",
     "mocha": "3.1.2",
+    "sinon": "1.17.6",
     "unit.js": "2.0.0"
   }
 }

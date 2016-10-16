@@ -10,6 +10,8 @@
  */
 
 let test = require('unit.js');
+let sinon = require('sinon');
+let co = require('co');
 let router = require('../../src');
 
 describe('Router ', function() {
@@ -53,5 +55,20 @@ describe('Router ', function() {
     let route = router.getByName(routeName);
 
     test.object(route).match((obj) => obj.name === routeName);
-  })
+  });
+
+  describe('call to routes()', function() {
+    it ('should call the appropriate route', function() {
+      let fn = sinon.spy();
+      let method = 'PATCH';
+      let path = '/test'
+      router.use({path, method, fn});
+
+      // Call the routes method
+      let generatorFn = router.routes().bind({method, path});
+      co(generatorFn());
+
+      test.bool(fn.called).isTrue();
+    });
+  });
 });
