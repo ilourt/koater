@@ -13,6 +13,8 @@ let test = require('unit.js');
 let router = require('../../src');
 
 describe('Router ', function() {
+  let routeName = 'myRouteName';
+
   it('should add route without name', function() {
     let route;
     let fn = function(){};
@@ -35,8 +37,7 @@ describe('Router ', function() {
     let fn = function(){};
     let path = '/my-path2';
     let method = 'POST';
-    let name = 'myRouteName';
-    router.use({method, path, fn, name});
+    router.use({method, path, fn, name: routeName});
 
     test.number(Object.keys(router._routes).length).is(2);
     test.bool(router._routes.hasOwnProperty(method + '_' + path)).isTrue();
@@ -44,7 +45,13 @@ describe('Router ', function() {
     route = router._routes[method + '_' + path];
     test.string(route.method).is(method);
     test.string(route.path).is(path);
-    test.string(route.name).is(name);
+    test.string(route.name).is(routeName);
     test.function(route.fn).is(fn);
+  });
+
+  it('should retrieve route by its name', function() {
+    let route = router.getByName(routeName);
+
+    test.object(route).match((obj) => obj.name === routeName);
   })
 });
