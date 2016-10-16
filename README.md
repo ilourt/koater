@@ -1,5 +1,7 @@
 # Koater
 
+[![Actual version published on NPM](https://badge.fury.io/js/koater.png)](https://www.npmjs.org/package/koater)
+
 Koater is a router for koa.
 
 Still under heavy development, **do not use it in production**.
