@@ -8,7 +8,9 @@ Still under heavy development, **do not use it in production**.
 
 ## Installation
 
-Not an npm for the moment. You can use via this git repository.
+```sh
+npm install koater
+```
 
 ## Usage
 
